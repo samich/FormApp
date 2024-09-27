@@ -1,0 +1,51 @@
+﻿@model Person
+
+<form method="post" asp-controller="Home" asp-action="submissions">
+
+    <div class="row mb-3 field-name">
+        <div class="col-4 text-end">
+            <label asp-for="Name" class="col-form-label"></label>
+        </div>
+        <div class="col-8">
+            <input type="text" asp-for="Name" class="col-form" />
+            <span asp-validation-for="Name" class="error"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3 field-age">
+        <div class="col-4 text-end">
+            <label asp-for="Age" class="col-form-label"></label>
+        </div>
+        <div class="col-8">
+            <input type="number" asp-for="Age" class="col-form" />
+            <span asp-validation-for="Age" class="error"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-4 text-end">
+            <label asp-for="Title" class="col-form-label"></label>
+        </div>
+        <div class="col-8">
+            <input type="text" asp-for="Title" class="col-form" />
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-4 text-end">
+            <label asp-for="Hometown" class="col-form-label"></label>
+        </div>
+        <div class="col-8">
+            <input type="text" asp-for="Hometown" class="col-form" />
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-4">            
+        </div>  
+        <div class="col-8">
+            <input type="submit" class="btn btn-primary" value="Submit" />
+        </div>
+    </div>
+
+</form>

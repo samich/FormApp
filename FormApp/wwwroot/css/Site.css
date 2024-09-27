@@ -1,0 +1,130 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    color: #4f546c;
+    background-color: rgb(243, 248, 254);
+}
+
+.container {
+    width: 1080px;
+    margin-top: 50px;
+    padding: 50px;
+
+    background: #FFFFFF;
+    box-shadow: 0 20px 50px -20px rgba(167,186,211, 0.6);
+    border-radius: 5px;
+}
+
+.inner {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.row {
+    margin-bottom: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0px 8px 24px #a7bad3;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+th {
+    background-color: #d0def2;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f8fe;
+}
+
+input[type="text"],
+input[type="number"] {
+    font: inherit;
+    color: #4f546c;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    width: 320px;
+    border: 1px solid #a7bad3;
+}
+
+.field-name .input-validation-error,
+.field-age .input-validation-error {
+    border: 1px solid rgba(238, 82, 83, 0.2);
+    background: rgba(238, 82, 83, 0.08);
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+}
+
+#form button {
+    margin-left: 110px;
+}
+
+span.error {
+    display: block;
+    color: #ee5253;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.alert {
+    padding: 5px 8px;
+    border-radius: 2px;
+    font-size: 90%;
+}
